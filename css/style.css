@@ -55,4 +55,9 @@
     justify-content: center;
 }
 
-media
+@media all and (max-width:768px){
+    .logo{
+        display: none;
+    }
+ 
+}
