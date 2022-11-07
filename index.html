@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio Hamel Cyril</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio Chewbacca</title>
 </head>
+
 <body>
+  <div class="container-flex bg-dark">
     <!--Navbarre-->
-            <nav class="navbar navbar-light bg-light">
-                <form class="container-fluid justify-content-evenly">
-                    <a class="navbar-brand" href="#">
-                      <div class="row">
-                        <div class="col">
-                          <img src="img/booy.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/css.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/html.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/js.png" alt="Bootstrap" width="50" height="50">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <img src="img/php.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/vs.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/symf.png" alt="Bootstrap" width="50" height="50">
-                          <img src="img/git.png" alt="Bootstrap" width="50" height="50">
-                        </div>
-                      </div> 
-                    </a>
-                      <button class="btn btn-lg btn-outline-success"type="button">Compétences</button>
-                      <button class="btn btn-lg btn-outline-danger" type="button">Qui suis-je</button>
-                      <button class="btn btn-lg btn-outline-warning" type="button">Me contacter</button>
-                    
-                </form>
-              </nav>
+    <nav class="navbar navbar-light bg-secondary border mt-2 radius rounded-pill success">
+      <div class="container-fluid justify-content-evenly">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center">
+              <div class="col-lg-5 containerNeon effetNeon">
+                <p>CHEWBACCA</p>
+              </div>
+              <div class="col-lg-2 offset-lg-1">
+                <img src="img/logoWookie.png" alt="Bootstrap" width="80" height="80">
+              </div>
+              <div class="col-lg-2 offset-lg-1">
+                <img src="img/logoAlliance.png" alt="css3" width="80" height="80">
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
- <div class="container">
-    <div class="row">
-
-    </div>
- </div>
-    
-<div class="container-fluid">
-  <!--Photos et experiences----loisirs-->
-  <div class="row">
-    <div class="col-12">
-      photo et xp
-    </div>
-    <!--mosaique d'experiences avec photos-->
-      <div class="row">
-        <div class="col">
-            card 1
-        </div>
-        <div class="col">
-            card 2
-        </div>
-        <div class="col">
-            card 3
+        <a href="#experience"><button class="btn btn-lg  effetNeon" type="button">Compétences</button></a>
+        <a href="#moi"><button class="btn btn-lg  effetNeon" type="button">Qui suis-je</button></a>
+        <a href="#contact"><button class="btn btn-lg  effetNeon" type="button">Me contacter</button></a>
+      </div>
+    </nav>
+    <!--carousel d'experiences avec photos-->
+    <div class="row text-info text-center espace">
+      <div class="col-lg-4 offset-lg-4">
+        <p id="experience"></p>
+        <h1 class="effetNeon">COMPETENCES</h1>
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/initiatives.jpg" class="d-block w-100" alt="test1">
+              <div class="carousel-caption d-none d-md-block text-info">
+                <h5>Initiatives</h5>
+                <p>Toujours capable de se sortir de situations périlleuses</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/logique.jpeg" class="d-block w-100" alt="test2">
+              <div class="carousel-caption d-none d-md-block text-info">
+                <h5>Logique </h5>
+                <p>Aime travailler sa logique</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/equipe.jpg" class="d-block w-100" alt="test3">
+              <div class="carousel-caption d-none d-md-block text-info">
+                <h5>Travail d'équipe</h5>
+                <p>A l'aise dans le travail d'équipe</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <!--Qui suis-je-->
-    <div class="row">
-      <div class="col">
-        qui suis-je
+    </div>
+    <!--Photos et experiences----loisirs-->
+    <p id="moi"></p>
+    <div class="row text-center text-light espace">
+      <div class="col-lg-4 offset-lg-4">
+        <h1 class="effetNeon">Qui suis-je</h1>
+        <img id="chewi" src="img/chewi.jpg" alt="photoDeProfil">
+        <!--Qui suis-je-->
+        <p>Un ours en peluche très grognon</p>
       </div>
-      <!--Formulaire de contact-->
-<div class="row">
-  <div class="col">
-    formulaire contact
-  </div>
-</div>
-      
+    </div>
+    <!--Formulaire de contact-->
+    <div class="row text-center espace">
+      <div class="col-lg-4 offset-lg-4">
+        <p id="contact"></p>
+        <h1 class="effetNeon">Me contacter</h1>
+        <form class="was-validated">
+          <div class="col-mb-3">
+            <label for="validationCustomEmail" class="form-label effetNeon">E-Mail</label>
+            <div class="form-outline">
+              <input type="text" class="form-control" id="validationCustomEmail" value=""
+                placeholder="DarthMaul@DoubleBody.loose" required />
+              <div class="valid-feedback">Validé!!!</div>
+              <div class="invalid-feedback">Bip..Bip..Erreur</div>
+            </div>
+          </div>
+          <div class="col-mb-3">
+            <label for="validationCustomUsername" class="form-label effetNeon">Pseudo</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Darth Vadehors"
+                aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Choisissez un pseudo
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="validationTextarea" class="form-label effetNeon">Votre message</label>
+            <textarea class="form-control" id="validationTextarea"
+              placeholder="Votre message, je répondrais quand je capterai la 8g dans le systeme Dagoba"
+              required></textarea>
+            <div class="invalid-feedback">
+              Veuillez me laisser votre message
+            </div>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-secondary effetNeon" type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+  <!--footer avec adresse et liens vers réseaux sociaux pros-->
 
-<!--footer avec adresse et liens vers réseaux sociaux pros-->
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
