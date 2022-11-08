@@ -1,1 +1,56 @@
-/*# sourceMappingURL=style.css.map */
+.btn {
+  border-radius: 50px !important;
+}
+
+#chewi {
+  border-radius: 180px;
+  width: 250px;
+  height: 300px;
+}
+
+.espace {
+  margin-top: 100px;
+}
+
+.effetNeon {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #03F3FF, 0 0 77px #03F3FF, 0 0 100px #03F3FF;
+  -webkit-animation: lumiere 0.5s infinite linear;
+          animation: lumiere 0.5s infinite linear;
+}
+
+@-webkit-keyframes lumiere {
+  0% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #03F3FF, 0 0 77px #03F3FF, 0 0 100px #03F3FF;
+  }
+  50% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 32px #03F3FF, 0 0 87px #03F3FF, 0 0 120px #03F3FF;
+  }
+}
+
+@keyframes lumiere {
+  0% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #03F3FF, 0 0 77px #03F3FF, 0 0 100px #03F3FF;
+  }
+  50% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 32px #03F3FF, 0 0 87px #03F3FF, 0 0 120px #03F3FF;
+  }
+}
+.effetNeon span {
+  font-size: 40px;
+}
+
+.containerNeon {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

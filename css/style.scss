@@ -1,22 +1,25 @@
-$textNeonLight: #fff;
-$neonLight: #03F3FF;
-$backGroundLight:#D6BEAB;
-$textNeonDark: #000;
-$neonDark: #A40001;
-$backGroundDark:#302B27;
-
-
-@if($Light-theme){
-    text-color:$textNeonLight;
-    color:$neonLight;
-    background-color:$backGroundLight ;
-}@else{
-    color:$textNeonDark;
-    color:$neonDark;
-    color:$backGroundDark
+:root, :root.clair 
+{
+$textNeon: #fff;
+$neon: #03F3FF;
+$backGround:#D6BEAB;
 }
+@media (prefers-color-scheme: dark) 
+{
+  :root 
+  {$textNeon: rgb(248, 51, 51);
+    $neon: #750202;
+    $backGround:#302B27;
+  }
+}
+    :root.sombre 
+    {$textNeon: rgb(248, 51, 51);
+        $neon: #750202;
+        $backGround:#302B27;
+    }
 
-.btn {
+
+        .btn {
     border-radius: 50px !important;
 }
 #chewi{
@@ -33,32 +36,32 @@ $backGroundDark:#302B27;
 
 .effetNeon {
     font-size: 30px;
-    color: $textNeonLight $textNeonDark;
+    color: $textNeon;
     text-shadow:
-        0 0 7px $textNeonLight $textNeonDark,
-        0 0 10px $textNeonLight $textNeonDark,
-        0 0 42px $neonLight $neonDark,
-        0 0 77px $neonLight $neonDark,
-        0 0 100px $neonLight $neonDark;
+        0 0 7px  $textNeon,
+        0 0 10px $textNeon,
+        0 0 42px $neon,
+        0 0 77px $neon,
+        0 0 100px $neon;
     animation: lumiere 0.5s infinite linear;
 }
 
 @keyframes lumiere {
     0%{
         text-shadow:
-        0 0 7px $textNeonLight $textNeonDark,
-        0 0 10px $textNeonLight $textNeonDark,
-        0 0 42px $neonLight $neonDark,
-        0 0 77px $neonLight $neonDark,
-        0 0 100px $neonLight $neonDark;
+        0 0 7px $textNeon,
+        0 0 10px $textNeon,
+        0 0 42px $neon,
+        0 0 77px $neon,
+        0 0 100px $neon;
     }
    50%{
         text-shadow:
-        0 0 7px $textNeonLight $textNeonDark,
-        0 0 10px $textNeonLight $textNeonDark,
-        0 0 32px $neonLight $neonDark,
-        0 0 87px $neonLight $neonDark,
-        0 0 120px $neonLight $neonDark;
+        0 0 7px $textNeon,
+        0 0 10px $textNeon,
+        0 0 32px $neon,
+        0 0 87px $neon,
+        0 0 120px $neon;
     }
 }
 .effetNeon span {
@@ -77,5 +80,4 @@ $backGroundDark:#302B27;
     .logo{
         display: none;
     }
- 
 }
