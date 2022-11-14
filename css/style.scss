@@ -1,8 +1,6 @@
 /*$themes: (
   light: (*/
-    $textNeon: #FFF;
-    $backGround: #D6BEAB;
-    $neon: #03F3FF;
+    
   /*),
   dark: (*/
     $textNeon: rgb(248, 51, 51);
@@ -10,6 +8,16 @@
     $neon: #750202;
   /*),
 );*/
+$textNeon: #FFF;
+    $backGround: #D6BEAB;
+    $neon: #03F3FF;
+body{
+    --bg:#D6BEAB;
+}
+
+body.dark{
+    --bg:#302B27;
+}
 
 .container-flex{
     background-color: $backGround;
